@@ -3,7 +3,6 @@
 
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
     <meta name="who" content="watch.out" />
     <style>
       body {
