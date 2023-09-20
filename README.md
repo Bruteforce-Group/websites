@@ -1,32 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="comment" content="it's coming" />
-        <style>
-        body {
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        #coming-soon {
-            font-family: 'Helvetica', sans-serif;
-            color: white;
-            opacity: 0;
-            animation: fade 5s infinite;
-            font-size: 4em;
-        }
-        @keyframes fade {
-            30% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-    </style>
-    <title>Bruteforce Group!</title>
-</head>
-<body>
-    <div id="coming-soon">... it's coming</div>
-</body>
-</html>
+jsx
+import React from 'react';
+import { animated, useSpring } from 'react-spring';
+
+const styles = {
+  body: {
+    backgroundColor: "black",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
+  },
+  comingSoon: {
+    fontFamily: "'Helvetica', sans-serif",
+    color: "white",
+    fontSize: "4em",
+  },
+}
+
+const ComingSoon = () => {
+
+  const animProps = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: {
+      duration: 5000
+    }
+  });
+
+  return (
+    <animated.div style={{ ...styles.comingSoon, ...animProps}}>... it's coming</animated.div>
+  );
+}
+
+export default ComingSoon;
