@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
-    <meta name="generator" content="BBEdit 14.6" />
+    <meta name="comment" content="it's coming" />
         <style>
         body {
             background-color: black;
