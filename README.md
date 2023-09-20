@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
     <meta name="comment" content="it's coming" />
         <style>
         body {
@@ -20,7 +19,7 @@
             font-size: 4em;
         }
         @keyframes fade {
-            0% { opacity: 0; }
+            30% { opacity: 0; }
             50% { opacity: 1; }
             100% { opacity: 0; }
         }
